@@ -1,75 +1,22 @@
-/* Reset */
+/* ================= HOME PAGE ================= */
 
-*{
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/* Body */
-
-body{
-    min-height: 100vh;
-    background-color: #000;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
 }
 
-
-/* Splash Screen */
-
-.splash-screen{
-    text-align: center;
-}
-
-
-/* Logo */
-
-.logo{
-    font-size: 4rem;
-    font-weight: 700;
-    color: white;
-    letter-spacing: 1px;
-}
-
-
-/* ₹ Symbol */
-
-.logo span{
-    color: #22C55E;
-}
-
-
-/* Tagline */
-
-.tagline{
-    margin-top: 15px;
-    font-size: 1rem;
-    color: #bfbfbf;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-}
-
-/* ================= HOME PAGE ================= */
-
-body{
-
-    margin:0;
-    background:#0D0D0D;
-    font-family:'Poppins',sans-serif;
-    color:white;
-
-}
-
-.mobile-app{
-
-    width:100%;
-    min-height:100vh;
-    background:#0D0D0D;
-
+.mobile-app {
+    width: 390px;  /* Fits perfectly inside desktop screens like your screenshots */
+    min-height: 844px;
+    background: #0D0D0D;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    overflow: hidden;
 }
 
 /* Header */

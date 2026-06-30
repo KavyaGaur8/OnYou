@@ -1,0 +1,156 @@
+/* ================= HOME & CREATE BILL MUTUAL STYLES ================= */
+
+body {
+    margin: 0;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mobile-app {
+    width: 390px;  /* Fits perfectly inside desktop screens like your screenshots */
+    min-height: 844px;
+    background: #0D0D0D;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    
+    /* FIX: Added border-radius and overflow to clip the background perfectly */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background: #2C3136;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+}
+
+.logo {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #22C55E;
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #1D1D1D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+/* Ribbon Nav Zone */
+.ribbon {
+    height: 80px;
+    background: #1E8F3C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Header Text Button Wrapper */
+.page-title-box {
+    background: #2ECC5A;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 10px 50px;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,.3);
+}
+
+/* Carousel Side Anchors */
+.left-triangle {
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-right: 22px solid #2ECC5A;
+    cursor: pointer;
+}
+
+.right-triangle {
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 22px solid #2ECC5A;
+    cursor: pointer;
+}
+
+/* App Main Container Layout */
+.content {
+    padding: 30px 22px;
+}
+
+/* Greetings Header Zone */
+.greeting h2 {
+    font-size: 30px;
+    margin-bottom: 35px; /* Unified layout margin pushing down cards */
+}
+
+/* Menu Wrap */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Main Navigation Interactive Action Cards */
+.card {
+    background: #1C1C1E;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+    width: 100%;
+}
+
+.card:hover {
+    background: #292929;
+    transform: translateY(-3px);
+}
+
+/* Layout Structural Blocks Internal to Double Line Content Subsections */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 6px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.card-subtext {
+    color: #BDBDBD;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Primary Indicator Chevron Icons */
+.right {
+    color: #22C55E;
+    font-size: 36px;
+}

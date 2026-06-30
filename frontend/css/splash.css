@@ -1,0 +1,66 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mobile-app {
+    width: 390px;
+    height: 844px; /* Changed min-height to height so centering works accurately */
+    background: #0D0D0D;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    overflow: hidden;
+
+    /* UPDATED: Centers the splash screen contents inside the app frame */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Splash Screen */
+
+.splash-screen {
+    text-align: center;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+/* ₹ Symbol */
+
+.logo span {
+    color: #22C55E;
+}
+
+
+/* Tagline */
+
+.tagline {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #bfbfbf;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
