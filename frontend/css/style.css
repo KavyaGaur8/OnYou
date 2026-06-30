@@ -1,0 +1,256 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body{
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Splash Screen */
+
+.splash-screen{
+    text-align: center;
+}
+
+
+/* Logo */
+
+.logo{
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+/* ₹ Symbol */
+
+.logo span{
+    color: #22C55E;
+}
+
+
+/* Tagline */
+
+.tagline{
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #bfbfbf;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+/* ================= HOME PAGE ================= */
+
+body{
+
+    margin:0;
+    background:#0D0D0D;
+    font-family:'Poppins',sans-serif;
+    color:white;
+
+}
+
+.mobile-app{
+
+    width:100%;
+    min-height:100vh;
+    background:#0D0D0D;
+
+}
+
+/* Header */
+
+.header{
+
+    background:#2C3136;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 20px;
+
+}
+
+.logo{
+
+    font-size:34px;
+    font-weight:700;
+
+}
+
+.logo span{
+
+    color:#22C55E;
+
+}
+
+.profile{
+
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    background:#1D1D1D;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:24px;
+
+}
+
+/* Ribbon */
+
+.ribbon{
+
+    height:80px;
+
+    background:#1E8F3C;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 20px;
+
+}
+
+/* Home Button */
+
+.page-title-box{
+
+    background:#2ECC5A;
+
+    color:white;
+
+    font-size:32px;
+    font-weight:700;
+
+    padding:10px 50px;
+
+    border-radius:18px;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.3);
+
+}
+
+/* Triangles */
+
+.left-triangle{
+
+    width:0;
+    height:0;
+
+    border-top:16px solid transparent;
+    border-bottom:16px solid transparent;
+
+    border-right:22px solid #2ECC5A;
+
+}
+
+.right-triangle{
+
+    width:0;
+    height:0;
+
+    border-top:16px solid transparent;
+    border-bottom:16px solid transparent;
+
+    border-left:22px solid #2ECC5A;
+
+}
+
+/* Content */
+
+.content{
+
+    padding:30px 22px;
+
+}
+
+/* Greeting */
+
+.greeting h2{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.greeting p{
+
+    color:#BDBDBD;
+
+    font-size:20px;
+
+    margin-bottom:35px;
+
+}
+
+/* Menu */
+
+.menu{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.card{
+
+    background:#1C1C1E;
+
+    color:white;
+
+    border:none;
+
+    border-radius:20px;
+
+    padding:22px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    background:#292929;
+
+    transform:translateY(-3px);
+
+}
+
+.right{
+
+    color:#22C55E;
+
+    font-size:36px;
+}
