@@ -1,59 +1,103 @@
-/* ================= GLOBAL CONFIGURATION MUTUAL STYLES ================= */
+/* ================= GLOBAL ================= */
 
-body {
-    margin: 0;
-    background: white;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.mobile-app {
-    width: 390px;  /* Fits perfectly inside desktop screens like your screenshots */
-    min-height: 844px;
-    background: #0D0D0D;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    
-    /* FIX: Added border-radius and overflow to clip the background perfectly */
-    border-radius: 12px;
-    overflow: hidden;
+body{
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    font-family:'Poppins',sans-serif;
+
 }
 
-/* Header Component Area */
-.header {
-    background: #2C3136;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 20px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+/* Mobile */
+
+.mobile-app{
+
+    width:390px;
+
+    height:844px;
+
+    background:#0D0D0D;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+
+    display:flex;
+
+    flex-direction:column;
+
 }
 
-.logo {
-    font-size: 34px;
-    font-weight: 700;
+/* Header */
+
+.header{
+
+    background:#2C3136;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 20px;
+
 }
 
-.logo span {
-    color: #22C55E;
+.logo{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:white;
+
 }
 
-.profile {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #1D1D1D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
+.logo span{
+
+    color:#22C55E;
+
 }
 
-/* Carousel Center Ribbon */
+.profile{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    background:#1C1C1E;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+}
+
+/* Ribbon */
+
 .ribbon {
     height: 80px;
     background: #1E8F3C;
@@ -92,147 +136,238 @@ body {
     cursor: pointer;
 }
 
-/* App Body Layout Wrapper */
-.content {
-    padding: 30px 22px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+/* Main */
+
+.content{
+
+    flex:1;
+
+    padding:28px 22px;
+
+    display:flex;
+
+    flex-direction:column;
+
 }
 
-.greeting h2 {
-    font-size: 30px;
-    margin-bottom: 30px;
-    font-weight: 700;
+/* Heading */
+
+.greeting h2{
+
+    color:white;
+
+    font-size:30px;
+
+    margin-bottom:28px;
+
 }
 
-/* Core Navigation Action Cards */
-.menu {
-    margin-bottom: 35px;
+/* Card */
+
+.menu{
+
+    margin-bottom:35px;
+
 }
 
-.card {
-    background: #1C1C1E;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 22px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    transition: .3s;
-    width: 100%;
+.card{
+
+    width:100%;
+
+    background:#1C1C1E;
+
+    border:none;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    cursor:pointer;
+
 }
 
-.card:hover {
-    background: #292929;
-    transform: translateY(-3px);
+.card-title{
+
+    font-size:20px;
+
+    font-weight:600;
+
 }
 
-.card-title {
-    font-size: 24px;
-    font-weight: 700;
+.right{
+
+    font-size:34px;
+
+    color:#22C55E;
+
 }
 
-.right {
-    color: #22C55E;
-    font-size: 36px;
+/* Members */
+
+.members-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
 }
 
-/* ================= ADD MEMBERS PAGE EXTRA STYLES ================= */
+.section-title{
 
-/* Section Subhead Headers */
-.members-section {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    color:white;
+
+    font-size:22px;
+
+    font-weight:700;
+
 }
 
-.section-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: white;
+/* Box */
+
+.members-list-card{
+
+    background:#1C1C1E;
+
+    border-radius:18px;
+
+    padding:15px;
+
 }
 
-/* Nested Custom Aggregate List Component Box */
-.members-list-card {
-    background: #1C1C1E;
-    border-radius: 20px;
-    padding: 10px 22px;
-    display: flex;
-    flex-direction: column;
+/* Scroll */
+
+.members-scroll{
+
+    max-height:240px;
+
+    overflow-y:auto;
+
+    padding-right:6px;
+
 }
 
-/* Dynamic Item Row Blocks */
-.member-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 0;
-    border-bottom: 1px solid #2C2C2E;
+/* Scrollbar */
+
+.members-scroll::-webkit-scrollbar{
+
+    width:5px;
+
 }
 
-.member-name {
-    font-size: 24px;
-    font-weight: 500;
+.members-scroll::-webkit-scrollbar-thumb{
+
+    background:#555;
+
+    border-radius:10px;
+
 }
 
-/* Vibrant Red Dismiss Close Buttons */
-.remove-btn {
-    background: none;
-    border: none;
-    color: #EF4444; /* Clean iOS/Android style error red tint */
-    font-size: 36px;
-    line-height: 1;
-    cursor: pointer;
-    transition: transform 0.2s;
-    padding: 0;
+.members-scroll::-webkit-scrollbar-track{
+
+    background:transparent;
+
 }
 
-.remove-btn:hover {
-    transform: scale(1.2);
+/* Member */
+
+.member-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:16px 4px;
+
+    border-bottom:1px solid #2E2E2E;
+
 }
 
-/* Inside In-Line Manual Dynamic Addition CTA Row */
-.add-manual-btn {
-    background: none;
-    border: none;
-    color: white;
-    text-align: left;
-    padding: 20px 0 12px 0;
-    font-size: 24px;
-    font-weight: 500;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    transition: color 0.2s;
+.member-name{
+
+    font-size:22px;
+
+    color:white;
+
 }
 
-.add-manual-btn:hover {
-    color: #22C55E;
+.remove-btn{
+
+    background:none;
+
+    border:none;
+
+    color:#FF4D4D;
+
+    font-size:34px;
+
+    cursor:pointer;
+
 }
 
-/* Screen Footer Anchor Actions */
-.footer-actions {
-    margin-top: auto; /* Pushes the continue link all the way to the screen base */
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 30px;
+/* Manual */
+
+.add-manual-btn{
+
+    margin-top:12px;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    text-align:left;
+
 }
 
-.continue-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: color 0.2s, transform 0.2s;
+/* Continue */
+
+.footer-actions{
+
+    margin-top:auto;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    padding-top:25px;
+
 }
 
-.continue-btn:hover {
-    color: #22C55E;
-    transform: translateX(4px);
+.continue-btn{
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:26px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+.continue-btn:hover{
+
+    color:#22C55E;
+
 }
